@@ -3,7 +3,7 @@
 # DDNS
 #DOMAIN-SUFFIX,checkip.dyndns.org
 #DOMAIN-SUFFIX,checkipv6.dyndns.org
-DOMAIN-SUFFIX,checkip.synology.com
+#DOMAIN-SUFFIX,checkip.synology.com
 #DOMAIN-SUFFIX,ifconfig.co
 #DOMAIN-SUFFIX,api.myip.com
 #DOMAIN-SUFFIX,ip-api.com
@@ -15,6 +15,7 @@ DOMAIN-SUFFIX,checkip.synology.com
 #DOMAIN-SUFFIX,ipify.org
 
 # Others
+DOMAIN-KEYWORD,synology
 DOMAIN-KEYWORD,parsec
 DOMAIN,www.787fz.com
 DOMAIN-KEYWORD,zerotier
@@ -24,13 +25,6 @@ DOMAIN-SUFFIX,dogfight360
 # Papers
 DOMAIN-SUFFIX,dl.acm.org
 DOMAIN-SUFFIX,ieeexplore.ieee.org
-
-# Steam
-DOMAIN-SUFFIX,steamcontent.com
-DOMAIN-SUFFIX,steamstatic.com
-DOMAIN-SUFFIX,steamserver.net
-DOMAIN-SUFFIX,test.steampowered.com
-DOMAIN-SUFFIX,api.steampowered.com
 
 # Amytelecom
 DOMAIN-SUFFIX,uttjhu.xyz
