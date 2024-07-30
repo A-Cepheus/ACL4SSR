@@ -1,3 +1,4 @@
 # 内容：需要代理的内容
 # DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,my.zerotier.com
+DOMAIN-KEYWORD,pikpak
