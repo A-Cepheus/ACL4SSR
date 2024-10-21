@@ -21,6 +21,9 @@ DOMAIN-KEYWORD,parsec
 DOMAIN,www.787fz.com
 DOMAIN-KEYWORD,zerotier
 PROCESS-NAME,zerotier-one
+PROCESS-NAME,node
+PROCESS-NAME,tailscale
+PROCESS-NAME,tailscaled
 DOMAIN-SUFFIX,dogfight360
 
 # Papers
