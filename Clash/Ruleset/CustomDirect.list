@@ -88,7 +88,6 @@ DOMAIN,test.steampowered.com
 #IP-CIDR,208.64.202.0/24,no-resolve
 #IP-CIDR,208.64.203.0/24,no-resolve
 #IP-CIDR,208.78.164.0/22,no-resolve
-#
 #IP-CIDR,45.121.184.0/23,no-resolve
 
 # EPIC Download
