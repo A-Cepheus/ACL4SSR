@@ -17,7 +17,7 @@
 # Others
 DOMAIN-SUFFIX,snrc.site
 DOMAIN-KEYWORD,synology
-DOMAIN-KEYWORD,parsec
+#DOMAIN-KEYWORD,parsec
 DOMAIN,www.787fz.com
 DOMAIN-KEYWORD,zerotier
 PROCESS-NAME,zerotier-one
