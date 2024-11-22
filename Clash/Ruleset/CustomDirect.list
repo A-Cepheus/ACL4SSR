@@ -1,25 +1,25 @@
 # 内容：需要手动直连的内容
 
 # DDNS
-#DOMAIN-SUFFIX,checkip.dyndns.org
-#DOMAIN-SUFFIX,checkipv6.dyndns.org
-#DOMAIN-SUFFIX,checkip.synology.com
-#DOMAIN-SUFFIX,ifconfig.co
-#DOMAIN-SUFFIX,api.myip.com
-#DOMAIN-SUFFIX,ip-api.com
-#DOMAIN-SUFFIX,ipapi.co
-#DOMAIN-SUFFIX,ip6.seeip.org
-#DOMAIN-SUFFIX,members.3322.org
-#DOMAIN-SUFFIX,ip.sb
-#DOMAIN-SUFFIX,ident.me
-#DOMAIN-SUFFIX,ipify.org
+DOMAIN-SUFFIX,checkip.dyndns.org
+DOMAIN-SUFFIX,checkipv6.dyndns.org
+DOMAIN-SUFFIX,checkip.synology.com
+DOMAIN-SUFFIX,ifconfig.co
+DOMAIN-SUFFIX,api.myip.com
+DOMAIN-SUFFIX,ip-api.com
+DOMAIN-SUFFIX,ipapi.co
+DOMAIN-SUFFIX,ip6.seeip.org
+DOMAIN-SUFFIX,members.3322.org
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,ident.me
+DOMAIN-SUFFIX,ipify.org
 
 # Others
 DOMAIN-SUFFIX,snrc.site
 DOMAIN-KEYWORD,synology
 #DOMAIN-KEYWORD,parsec
 DOMAIN,www.787fz.com
-DOMAIN-KEYWORD,zerotier
+#DOMAIN-KEYWORD,zerotier
 PROCESS-NAME,zerotier-one
 PROCESS-NAME,node
 PROCESS-NAME,tailscale
@@ -35,11 +35,11 @@ DOMAIN-SUFFIX,uttjhu.xyz
 DOMAIN-SUFFIX,qeuhco.xyz
 
 # SteamCN
-DOMAIN-SUFFIX,cm.steampowered.com
-DOMAIN-SUFFIX,steamserver.net
+#DOMAIN-SUFFIX,cm.steampowered.com
+#DOMAIN-SUFFIX,steamserver.net
 # 启动时调用的，
-DOMAIN,api.steampowered.com
-DOMAIN,test.steampowered.com
+#DOMAIN,api.steampowered.com
+#DOMAIN,test.steampowered.com
 
 # https://ipinfo.io/AS32590#block-ranges
 #IP-CIDR,103.10.124.0/24,no-resolve
