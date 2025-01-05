@@ -36,11 +36,15 @@ DOMAIN-SUFFIX,qeuhco.xyz
 DOMAIN-SUFFIX,api.nxtlnodes.com
 
 # SteamCN
-#DOMAIN-SUFFIX,cm.steampowered.com
-#DOMAIN-SUFFIX,steamserver.net
+DOMAIN-SUFFIX,cm.steampowered.com
+DOMAIN-SUFFIX,steamserver.net
 # 启动时调用的，
-#DOMAIN,api.steampowered.com
-#DOMAIN,test.steampowered.com
+DOMAIN,api.steampowered.com
+DOMAIN,test.steampowered.com
+
+# emby
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,thetvdb.com
 
 # https://ipinfo.io/AS32590#block-ranges
 #IP-CIDR,103.10.124.0/24,no-resolve
