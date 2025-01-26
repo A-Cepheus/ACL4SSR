@@ -45,6 +45,7 @@ DOMAIN,test.steampowered.com
 # emby
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,thetvdb.com
+DOMAIN-SUFFIX,tmdb.org
 
 # EPIC Download
 URL-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com
