@@ -48,6 +48,9 @@ DOMAIN-SUFFIX,thetvdb.com
 DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,omdbapi.com
 
+# xiaoya
+DOMAIN-SUFFIX,api.nn.ci
+
 # EPIC Download
 URL-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com
 URL-REGEX,^epicgames-download\d\.akamaized\.net
