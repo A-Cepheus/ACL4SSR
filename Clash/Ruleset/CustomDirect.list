@@ -25,6 +25,7 @@ PROCESS-NAME,node
 PROCESS-NAME,tailscale
 PROCESS-NAME,tailscaled
 DOMAIN-SUFFIX,dogfight360
+DOMAIN-SUFFIX,hf-mirror.com
 
 # Papers
 DOMAIN-SUFFIX,dl.acm.org
