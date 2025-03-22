@@ -24,8 +24,10 @@ PROCESS-NAME,zerotier-one
 PROCESS-NAME,node
 PROCESS-NAME,tailscale
 PROCESS-NAME,tailscaled
+DOMAIN-KEYWORD,tailscale
 DOMAIN-SUFFIX,dogfight360
 DOMAIN-SUFFIX,hf-mirror.com
+DOMAIN-SUFFIX,eft-store.com
 
 # Papers
 DOMAIN-SUFFIX,dl.acm.org
@@ -39,7 +41,6 @@ DOMAIN-SUFFIX,api.nxtlnodes.com
 # SteamCN
 DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,steamserver.net
-# 启动时调用的，
 DOMAIN,api.steampowered.com
 DOMAIN,test.steampowered.com
 
