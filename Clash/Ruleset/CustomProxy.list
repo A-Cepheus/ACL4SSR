@@ -1,5 +1,6 @@
 # 内容：需要代理的内容
+
 # DOMAIN-SUFFIX,msftconnecttest.com
-#DOMAIN-SUFFIX,my.zerotier.com
+# DOMAIN-SUFFIX,my.zerotier.com
+# DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,mypikpak.com
-#DOMAIN-SUFFIX,sharepoint.com
