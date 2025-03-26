@@ -28,6 +28,7 @@ DOMAIN-KEYWORD,tailscale
 DOMAIN-SUFFIX,dogfight360
 DOMAIN-SUFFIX,hf-mirror.com
 DOMAIN-SUFFIX,eft-store.com
+DOMAIN-SUFFIX,0tec.cn
 
 # Papers
 DOMAIN-SUFFIX,dl.acm.org
@@ -37,6 +38,7 @@ DOMAIN-SUFFIX,ieeexplore.ieee.org
 DOMAIN-SUFFIX,uttjhu.xyz
 DOMAIN-SUFFIX,qeuhco.xyz
 DOMAIN-SUFFIX,api.nxtlnodes.com
+DOMAIN-SUFFIX,sub.kwk7thgc.com
 
 # SteamCN
 DOMAIN-SUFFIX,cm.steampowered.com
