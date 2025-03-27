@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,ip6.seeip.org
 DOMAIN-SUFFIX,members.3322.org
 DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,ident.me
-DOMAIN-SUFFIX,ipify.org
+# DOMAIN-SUFFIX,ipify.org
 
 # Others
 DOMAIN-SUFFIX,snrc.site
