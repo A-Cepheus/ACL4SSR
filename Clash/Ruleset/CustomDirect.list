@@ -47,10 +47,10 @@ DOMAIN,api.steampowered.com
 DOMAIN,test.steampowered.com
 
 # emby
-DOMAIN-SUFFIX,themoviedb.org
-DOMAIN-SUFFIX,thetvdb.com
-DOMAIN-SUFFIX,tmdb.org
-DOMAIN-SUFFIX,omdbapi.com
+# DOMAIN-SUFFIX,themoviedb.org
+# DOMAIN-SUFFIX,thetvdb.com
+# DOMAIN-SUFFIX,tmdb.org
+# DOMAIN-SUFFIX,omdbapi.com
 
 # xiaoya
 DOMAIN-SUFFIX,api.nn.ci
