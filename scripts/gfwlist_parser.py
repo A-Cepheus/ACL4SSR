@@ -214,6 +214,15 @@ def parse_list_rule_line(line):
 def is_domain_rule_type(rule_type):
     return rule_type in ('DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD', 'DOMAIN-REGEX')
 
+def domain_for_mrs(rule_type, value):
+    if rule_type == 'DOMAIN':
+        return value
+    if rule_type == 'DOMAIN-SUFFIX':
+        return f'+.{value}'
+    # domain MRS cannot represent keyword or regex rules; keep them in classical sources.
+    print(f"Warning: Skipping unsupported domain MRS rule: {rule_type},{value}")
+    return None
+
 def is_ip_rule_type(rule_type):
     return rule_type in ('IP-CIDR', 'IP-CIDR6', 'IP-SUFFIX', 'IP-ASN')
 
@@ -245,7 +254,9 @@ def split_yaml_file(filepath):
                 if not rule_type or not rule_value:
                     continue
                 if is_domain_rule_type(rule_type):
-                    domains.append((rule_type, rule_value.strip()))
+                    domain = domain_for_mrs(rule_type, rule_value.strip())
+                    if domain is not None:
+                        domains.append(domain)
                 elif is_ip_rule_type(rule_type):
                     ips.append((rule_type, rule_value.strip()))
     except Exception as e:
@@ -256,8 +267,8 @@ def split_yaml_file(filepath):
     if domains:
         unique_domains = sorted(set(domains))
         domain_yaml = "payload:\n"
-        for rule_type, d in unique_domains:
-            domain_yaml += f"  - {rule_type},{d}\n"
+        for d in unique_domains:
+            domain_yaml += f"  - {d}\n"
         write_file(f"{base_name}_domain.yaml", domain_yaml)
     if ips:
         unique_ips = sorted(set(ips))
@@ -278,7 +289,9 @@ def split_list_file(filepath):
                 if not rule_type or not rule_value:
                     continue
                 if is_domain_rule_type(rule_type):
-                    domains.append((rule_type, rule_value.strip()))
+                    domain = domain_for_mrs(rule_type, rule_value.strip())
+                    if domain is not None:
+                        domains.append(domain)
                 elif is_ip_rule_type(rule_type):
                     ips.append((rule_type, rule_value.strip()))
     except Exception as e:
@@ -289,8 +302,8 @@ def split_list_file(filepath):
     if domains:
         unique_domains = sorted(set(domains))
         domain_text = ""
-        for rule_type, d in unique_domains:
-            domain_text += f"{rule_type},{d}\n"
+        for d in unique_domains:
+            domain_text += f"{d}\n"
         write_file(f"{base_name}_domain.list", domain_text)
     if ips:
         unique_ips = sorted(set(ips))
@@ -343,7 +356,7 @@ def generate_clash_provider_yaml(domain_list, ip_list, filename, title="payload"
     if unique_domains:
         domain_yaml = f"{title}:\n"
         for domain in unique_domains:
-            domain_yaml += f"  - DOMAIN-SUFFIX,{domain}\n"
+            domain_yaml += f"  - +.{domain}\n"
         write_file(f"{base_name}_domain.yaml", domain_yaml)
     
     # IP 规则 - YAML 格式
@@ -372,7 +385,7 @@ def generate_clash_ruleset_list(domain_list, ip_list, filename, title="GFWList")
     if unique_domains:
         domain_text = ""
         for domain in unique_domains:
-            domain_text += f"DOMAIN-SUFFIX,{domain}\n"
+            domain_text += f"+.{domain}\n"
         write_file(f"{base_name}_domain.list", domain_text)
     
     # IP 规则 - text 格式

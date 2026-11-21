@@ -58,6 +58,9 @@ jobs:
           echo "ERROR: All download attempts failed"
           exit 1
 
+      - name: Test MRS generation
+        run: MIHOMO_BIN=./mihomo python -B -m unittest discover -s scripts -p 'test_*.py'
+
       - name: Convert to mrs format
         run: |
           mkdir -p Clash/mrs

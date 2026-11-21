@@ -66,6 +66,10 @@
 
 ## Clash规则碎片
 
+`Clash/mrs/*_domain.mrs` 使用 Mihomo 的 `domain` 行为，只包含 `DOMAIN` 和 `DOMAIN-SUFFIX`：精确域名保持原样，后缀规则转换为 `+.example.com`。`DOMAIN-KEYWORD`、`DOMAIN-REGEX` 无法用 domain MRS 表达，生成时会跳过并输出警告；需要这些规则时，请使用对应的 `.list` 或 `behavior: classical` YAML，例如 `Clash/Providers/Ruleset/Gemini.yaml`。
+
+MRS 转换输入的格式参见 [Mihomo 规则集合内容](https://wiki.metacubex.one/config/rule-providers/content/)。
+
 主要文件在clash文件夹下，只是一些规则碎片，可以配合一些订阅转换进行使用。
 
 具体怎么使用需要看对应软件配置是怎么写的，还要请大家阅读你所使用的软件文档，看是否能使用
