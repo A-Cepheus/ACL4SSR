@@ -61,6 +61,14 @@ URL-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com
 URL-REGEX,^epicgames-download\d\.akamaized\.net
 URL-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com
 
+# PlayStation Download
+DOMAIN-SUFFIX,gst.prod.dl.playstation.net
+DOMAIN-SUFFIX,gs2.ww.prod.dl.playstation.net
+DOMAIN-SUFFIX,gs2-sec.ww.prod.dl.playstation.net
+DOMAIN-SUFFIX,gs-sec.ww.np.dl.playstation.net
+DOMAIN-SUFFIX,zeus.dl.playstation.net
+DOMAIN-SUFFIX,ares.dl.playstation.net
+
 # xiaoya
 DOMAIN-SUFFIX,emby.8.net.co
 DOMAIN-SUFFIX,emby.raydoom.tk
